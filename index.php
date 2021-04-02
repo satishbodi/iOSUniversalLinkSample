@@ -1,5 +1,1 @@
-<?php
-
-include_once(vega.html);
-
-?>
+<?php include_once("vega.html"); ?>
