@@ -5,6 +5,10 @@
     {
       "appID": "QKML53C37U.com.deloitte.testpoc",
       "paths": ["*"]
+    },
+    {
+      "appID": "QKML53C37U.com.deloitte.lilly.vega",
+      "paths": ["*"]
     }
     ]
   }
