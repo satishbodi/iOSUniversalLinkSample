@@ -5,7 +5,16 @@
       <meta http-equiv = "refresh" content = "1; url = applinks:vegapoc.herokuapp.com" />
       <script>
             window.addEventListener('DOMContentLoaded', function() {
-                var redirectUri = 'smartapp://callback';
+                var redirectUri = 'https://vegapoc.herokuapp.com';
+               
+               // copy query and fragment verbatim to the redirect uri, if they
+               // are defined
+               if (window.location.search) {
+                   redirectUri += window.location.search;
+               }
+               if (window.location.hash) {
+                   redirectUri += window.location.hash;
+               }
 
                 document.getElementById('continueButton').onclick = () => {
                     window.location.href = redirectUri;
