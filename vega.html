@@ -3,8 +3,42 @@
    <head>
       <title>HTML Meta Tag</title>
       <meta http-equiv = "refresh" content = "1; url = applinks:vegapoc.herokuapp.com" />
-   </head>
-   <body>
-      <p>Redirecting to Vega</p>
+      <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                var redirectUri = 'smartapp://callback';
+
+                document.getElementById('continueButton').onclick = () => {
+                    window.location.href = redirectUri;
+                };
+            });
+        </script>
+      <style>
+            #container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: sans-serif;
+                padding: 10px;
+                font-size: 20px;
+            }
+            #continueButton {
+                margin-top: 10px;
+                padding: 8px 32px;
+                color: white;
+                background-color: #2196F3;
+                font-size: 16px;
+            }
+            #heading {
+                color: #2196F3;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <h3 id='heading'>Authorization Complete</h3>
+            <h5>You have authorized Vega app to access your health data.</h5>
+            <button id='continueButton'>Continue</button>
+        </div>
+    </body>
    </body>
 </html>
