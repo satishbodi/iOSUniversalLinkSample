@@ -1,19 +1,5 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-    {
-      "appID": "QKML53C37U.com.deloitte.testpoc",
-      "paths": ["*"]
-    },
-    {
-      "appID": "QKML53C37U.com.deloitte.lilly.vega",
-      "paths": ["*"]
-    },
-    {
-      "appID": "QKML53C37U.com.deloitte.LillyPlus",
-      "paths": ["*"]
+   "webcredentials": {
+       "apps": [    "QKML53C37U.com.deloitte.LillyPlus"]
     }
-    ]
-  }
 }
