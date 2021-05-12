@@ -9,6 +9,10 @@
     {
       "appID": "QKML53C37U.com.deloitte.lilly.vega",
       "paths": ["*"]
+    },
+    {
+      "appID": "QKML53C37U.com.deloitte.LillyPlus",
+      "paths": ["*"]
     }
     ]
   }
